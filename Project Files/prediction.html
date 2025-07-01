@@ -1,0 +1,32 @@
+
+<!-- prediction.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pollen Classification - Predict</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Pollen Classification</h1>
+    <nav class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="prediction.html">Prediction</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h2>Upload an Image for Prediction</h2>
+    <form id="upload-form" action="/predict" method="post" enctype="multipart/form-data">
+      <input type="file" id="image-upload" name="file" accept="image/*" required>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <div id="result"></div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
